@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive partial borders plugin</title>
+	<style>
+		/* ungrid without mobile */
+		.row{width:100%;display:table;table-layout:fixed;}
+		.col{display:table-cell;}
+		
+		/* things to change */
+		.row{width: 70%; margin: auto;}
+		.mid.row > .col{ height: 150px; }
+		
+		/* draw box and align text */
+		.col{ text-align: center;}
+		.top.left.col{
+			border-top: 1px solid black;
+			border-left: 1px solid black;
+		}
+
+		.top.right.col{
+			border-top: 1px solid black;
+			border-right: 1px solid black;
+		}
+		.bottom.left.col{
+			border-bottom: 1px solid black;
+			border-left: 1px solid black;
+		}
+		.bottom.right.col{
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+		}
+		.mid.row > .col{
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			vertical-align: middle;
+		}
+		.top.center.col{
+			position: relative;
+			top: -0.5em;
+		}
+		.bottom.center.col{
+			position: relative;
+			bottom: -0.5em;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="row">
+		<div class="top left col"></div>
+		<div class="top center col">Top</div>
+		<div class="top right col"></div>
+	</div>
+	<div class="mid row">
+		<div class="col">Mid</div>
+	</div>
+	<div class="row">
+		<div class="bottom left col"></div>
+		<div class="bottom center col">Bottom</div>
+		<div class="bottom right col"></div>
+	</div>	
+
+</body>
+</html>
