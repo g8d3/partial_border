@@ -1,2 +1,2 @@
 # partial_border
-Partial border with only CSS. [See](http://git.io/vOGjL).
+Partial border with only CSS. See [index.html](http://git.io/vOGjL).
